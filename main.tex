@@ -1,0 +1,404 @@
+\documentclass[12pt,oneside, a4paper]{scrbook}
+\usepackage[right=2.5cm,left=2.5cm,top=2.5cm,bottom=25mm,includeheadfoot]{geometry}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[thinc]{esdiff}
+\usepackage{graphicx,amsmath,amssymb,amsthm,subcaption,biblatex}
+\usepackage{setspace}
+\usepackage[hang]{footmisc}
+\usepackage{pdfpages} 
+
+\setlength{\parindent}{0mm}
+\setlength{\parskip}{1ex plus0.5ex minus0.2ex}
+\setstretch{1.5}
+
+\renewcommand{\footnotesize}{10pt}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\renewcommand{\thesection}{\arabic{section}}
+
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{}
+
+\begin{document}
+
+\begin{titlepage} 
+
+% \includepdf[noautoscale]{./deckblatt.pdf}
+
+\end{titlepage}
+
+\addtocontents{toc}{\protect\thispagestyle{empty}}
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+
+\chapter{Einleitung}
+
+\section{Forschungsfrage der Seminararbeit}
+
+Die Suche nach einer Antwort auf die Frage welchen Gesetzmäßigkeiten unsere Welt folgt, besteht seit Menschengedenken. Die Antwort ist heutzutage sicherlich nicht vollständig, trotzdem sind die aktuellen Modelle, dank wissenschaftlicher Methoden, eine sehr gute Annäherung an die Realität. Erste Modelle, beginnend mit Newton und einfachen mechanischen Annahmen über die ersten relativistischen Überlegungen und Ausformulierungen von Albert Einstein bis hin zu aktuellen quantisierten Modellen, bilden einen Rahmen. Diese Modelle sind sehr komplex bzw. abstrakt und die Intuitivität nahm über die Zeit drastisch ab. Auch wenn aktuelle quantenmechanische Postulate auf den ersten Blick sehr abstrakt wirken, beschäftige ich mich in dieser Seminararbeit mit der Schrödingergleichung.
+
+\section{Bedeutung der Forschungsfrage für die Physik}
+
+Die Physik ist seit dem Aufkommen der Quantisierung aufgespalten in zwei große Theorien: die Quanten- und die Relativitätstheorie. Dabei beschreiben beide Theorien unterschiedliche Effekte, die zum Beispiel ab einer bestimmten Geschwindigkeit oder Größe auftreten. Somit ist die spezielle Relativitätstheorie für die Berechnung von Körpern (aber auch Teilchen) mit hohen Geschwindigkeiten oder Energien relevant. Die Quantenmechanik dagegen ist nur auf Elementarteilchen anwendbar. Das bedeutet jedoch nicht, dass nicht beide Theorien aufeinander übertragbar wären. So gelten auch für Quanten relativistische Gesetzmäßigkeiten. Somit haben beide Theorien ihre Daseinsberechtigung. Die zeitabhängige Schrödingergleichung stellt in dieser Hinsicht ein aktuelles und entscheidendes Element dar. Sie ist die Konsequenz aus klassisch mechanischen Annahmen, quantenmechanischen Erkenntnissen verbunden, zumindest in zweiter Ordnung, mit der relativistischen Natur der speziellen Relativitätstheorie (vgl. Martin O. Steinhauser 2017, S. 174).
+
+\chapter{Historischer Kontext der Schrödingergleichung}
+
+\section{Die Quantisierung und ihre Anfänge}
+
+Bis Anfang des 19. Jahrhunderts ging die Physik davon aus, dass Materie ausschließlich als lokalisierte Teilchen mit spezifischer Masse bzw. Energie existiert und dass sich Licht in Form von elektromagnetischen Wellen ausbreitet, welche beliebig groß und klein sein können. Es wurde angenommen, dass sich Licht, zum Beispiel nach dem Huygensschen Prinzip oder durch die Maxwell-Gleichungen, beschreiben lässt. Mit der Entdeckung des Planckschen Wirkungsquantums 1899 und der Erkenntnis, dass Licht in konstant groß bleibenden Paketen (Energiequanten) strahlt, also dass Licht quantisiert ist, kamen erstmals Zweifel an der Unterscheidung zwischen welle- und materieartigem Verhalten von Licht bzw. Materie auf. Die Erkenntnis, dass Licht quantisiert ist, wurde 1905 von Albert Einstein aufgegriffen und es gelang ihm damit erstmals, den photoelektrischen Effekt zu erklären (vgl. Einstein Albert 1917, S. 121–128).
+Diese Theorie wurde von anderen Forschern und durch Experimente weiter bestätigt und führte somit zum Aufkommen der Quantentheorie, in welcher die Energiequanten des Lichts "Photonen" genannt werden und damit einen Teilchencharakter gewinnen, der mit einer der elementaren Bausteine für unsere moderne Physik ist.
+Die Idee, dass Licht einen Wellen- sowie Teilchencharakter hat wurde später von Einstein als Welle-Teilchen-Dualismus bezeichnet.
+Ein weiterer wichtiger Schritt in der Entwicklung der Quantentheorie war die Vervollständigung des Welle- Teilchendualismus von Louis-Victor de Broglie 1924, in welcher er klassischen Materieteilchen (zum Beispiel Elektronen) auch einen Wellencharakter zuordnete.
+Die von De Broglie formulierten Welleneigenschaften für klassische Materieteilchen wurden durch die Materiewelle repräsentiert, welche, wie der Name schon sagt, klassische Materie als Welle beschreibt (vgl. Louis de Broglie 1970). Diese Materiewelle wurde anschließend von Erwin Schrödinger in der Wellenmechanik zur Schrödingergleichung verallgemeinert (Erwin Schrödinger 1963).
+Die Materiewelle sowie deren Verallgemeinerung von Erwin Schrödinger zur Schrödingergleichung wird in Kapitel 3 ausführlich behandelt. 
+
+\section{Moderne Erkenntnisse der Quantenphysik}
+
+Wie bereits erwähnt kratzen wir mit der Schrödingergleichung nur an dem Beginn der Erkenntnis der Quantentheorien, welche aus vielen weiteren darauf aufbauenden einzelnen Theorien besteht, die alle unter den Begriff "Quantentheorie" fallen. Grob zusammengefasst lässt sich sagen, dass auf die Entdeckung der Schrödingergleichung die Quantenelektrodynamik 1940 (vgl. Westfälische Wilhelms-Universität Münster 2014, S. 13) folgt, welche den Pfadintegralformalismus, eine direkte Konsequenz aus der zeitabhängigen Schrödingergleichung, zur Folge hat (vgl. Goethe Universität Frankfurth am Main 1998, S. 37).
+Anfang der 2000er entwickelte sich dann die Quantenfeldtheorie (vgl. Max-Plank-Gesellschaft 2005). Wiederum basierend darauf folgten Theorien wie die Quantenflavourdynamik, uns bekannt zur Beschreibung der schwachen Wechselwirkung in Atomkernen, 1969 (vgl. Deutscher Elektronen-Synchrotron DESY 2008) und die Quantenchromodynamik zur Berechnung der starken Wechselwirkung 1972 (vgl. Deutscher Elektronen-Synchrotron DESY 2008). Erkenntnisse aus Theorien wie diesen führten, natürlich stark verallgemeinert, zur Entdeckung von beispielsweise dem Hix-Teilchen.
+
+\chapter{Wichtige Annahmen}
+
+\section{Wahrscheinlichkeiten und Wellen-Dekohärenz}
+
+In den ersten Kapiteln wird das Wort Welle sehr oft benutzt, ohne auf seine eigentliche Bedeutung im Kontext der Quantenmechanik einzugehen. Dieses Versäumnis wird im Folgenden nachgeholt, da es fundamental für das Verständnis der Schrödingergleichung ist.
+
+Es lässt sich sagen, dass das Verständnis einer Welle im mechanischen Sinne, im Kontext der Quantenmechanik beginnend mit der Schrödingergleichung, komplett ungültig ist, da es sich nicht mehr um eine physische Ausbreitung eines Mediums handelt, sondern nur noch um eine Beschreibung einer Wahrscheinlichkeit. 
+Mit anderen Worten es breiten sich keine Teilchen in Form einer Welle aus, sondern die Wahrscheinlichkeit, dass ein Teilchen an einem Ort ist, "breitet sich aus". Das bedeutet, dass sich das Teilchen selber noch gar nicht auf einen tatsächlichen Ort festgelegt hat und sich tatsächlich nur die Wahrscheinlichkeit einer definitiven Lokalität ausbreitet. Erst ab dem Punkt einer Messung bzw. einer Wechselwirkung legt sich das Teilchen auf einen tatsächlichen Ort fest. Dieser Ort ist abhängig von der Wellenfunktion bzw. der Wahrscheinlichkeitsfunktion, die dieses Teilchen beschreibt (vgl. Jochen Pade 2012, S. 149f).
+Das bedeutet, dass wenn die Amplitude der Wellenfunktion bzw. deren Quadrat für einen bestimmten Ort sehr groß ist, dass damit dann auch die Wahrscheinlichkeit, dass sich das Teilchen dort aufhält bzw. dort messen lässt, groß ist.
+Dies bedeutet, dass das Teilchen, wenn es noch nicht gemessen worden ist bzw. noch nicht interagiert hat, nicht kohärent ist. Dieser Zustand der Unfestgelegtheit, Dekohärenz genannt, begegnet uns im Alltag aber nicht, da auf der Größenskala der klassischen Mechanik alle Teilchen permanent wechselwirken.
+Nur in absolut isolierten oder präparierten Umgebungen ist eine solche Dekohärenz zu beobachten (vgl. Jochen Pade 2012, S. 166).
+
+\section{Die Zeitabhängigkeit}
+
+Die zeitunabhängige Schrödingergleichung funktioniert in Bezug auf nicht zeitabhängige Gedankenexperimente wie zum Beispiel einem Potentialtopf oder zur Berechnung von statischen Aufenthaltswahrscheinlichkeiten (vgl. Wolfgang Demtröder 2010, S. 124). Wenn wir jedoch die Aufenthaltswahrscheinlichkeiten von freien Elementarteilchen wie zum Beispiel einem Elektron berechnen wollen und dieses nicht stationär ist, ist die herkömmliche Schrödingergleichung nicht mehr ausreichend. Dafür muss die Schrödingergleichung erst zeitabhängig gemacht werden (vgl. Wolfgang Demtröder 2010, S. 125).
+Wichtig ist dabei hervorzuheben, dass die Lösung der rein zeitabhängigen Schrödingergleichung erster Ordnung die einfachste lineare Gleichung ist, die man finden kann. Das bedeutet aber auch, dass diese nicht für Teilchen mit hoher (relativistischer) Geschwindigkeit benutzt werden kann und nur eine Näherungsgleichung für den nicht-relativistischen Fall mit kleinen Teilchengeschwindigkeiten und Energien ist.
+Die Lösung der zeitabhängigen Schrödingergleichung zweiter Ordnung dagegen behandelt Ort- und Zeit nicht symmetrisch, was für eine relativistische Schrödingergleichung zwingend notwendig ist \newline (vgl. Martin O. Steinhauser 2017, S. 174).
+
+\section{Heuristische Methode und Problemstellung}
+
+Die Schrödingergleichung ist nicht herleitbar, sondern nur heuristisch bzw. argumentativ aufstellbar, erklärbar (vgl. Reiner M. Dreizler, Cora S. Lüdde 2007; S. 41). Die Heuristik ist die Wissenschaft des Problemlösens. Das bedeutet, dass die Lösung eines Problems nicht etwa durch mathematische Plausibilität, sondern durch logische Annahmen gesucht wird. Dabei sind die getroffenen Annahmen in der Heuristik nicht mathematischer, sondern zum Beispiel physikalischer Natur. Das bedeutet, dass oft nach Sinnhaftigkeit ausprobiert wird (vgl. Gerd Gigerenzer, Peter M. Todd 1999). Im Folgenden wird das Problem formuliert und anschließend unter gegebenen physikalischen Annahmen gelöst.
+Wie in der Ausführung zum historischen Kontext bereits angegeben, nahm man bis zum 1900 Jahrhundert an, dass Licht und Materie jeweils unterschiedlichen Prinzipien in ihrem Verhalten folgen. Dabei wurde angenommen, dass Licht sich als Welle (mit Eigenschaften wie Frequenz und Wellenvektor) ausbreitet und dass Materie lokal mit einer spezifischen Masse existiert (mit Eigenschaften wie Impuls und Energie) (vgl. Torsten Fließbach, Hans Walliser 2020; S. 311).
+Dieses Verständnis wurde von Einstein revolutioniert, sodass bald akzeptiert war, dass Licht auch Teilcheneigenschaften hat. Diese Teilchen nannte man Photonen. Einstein belegte diesen Teilchencharakter anhand des photoelektrischen Effekts. Zuvor wurden die beispielsweise am Doppelspalt gemessenen Interferenzeffekte als Beweis für den alleinigen Wellencharakter des Lichts interpretiert. 
+Später ging De Broglie noch einen Schritt weiter und ordnete Materieteilchen, wie zum Beispiel Elektronen Welleneigenschaften zu.
+Diese Materie mit Welleneigenschaften nannte De Broglie Materiewelle, welche nun die Ausbreitung von Materieteilchen mit Welleneigenschaften beschreibt (vgl. Wolfgang Nolting 2013, S. 83).
+Die Schrödingergleichung geht dann noch einen Schritt weiter. Mit ihr beschreibt Schrödinger Teilchen nicht mehr mit Welleneigenschaften, sondern beschreibt diese mithilfe einer Welle(ngleichung) und vereint damit beide Betrachtungen. Ausgehend von der Betrachtung einer Welle als Teilchen und Teilchen mit Welleneigenschaften, hin zu einer Betrachtung in welcher Teilchen durch eine Welle(ngleichung) definiert werden.
+Da die Quantenmechanik größtenteils auf moderne mathematische Formulierungen zurückgreift, wird im nächsten Kapitel auf die Grundlagen der quantenmechanischen Mathematik eingegangen.
+
+\section{Neue mathematische Konzepte und Operatoren}
+
+Die Mathematik, welche in der Quantenmechanik angewandt wird, unterscheidet sich in der Methode wesentlich von den Ansätzen, die man aus der klassischen mechanischen Physik kennt. Dabei bleiben natürlich alle mathematischen Konstanten und Axiome weiter gültig, es ändert sich jedoch die Methodik, mit welcher Probleme gelöst werden. 
+So werden in der Quantenmechanik Gleichungen beschrieben, in dem auf Wellengleichungen oder Vektoren, Operatoren wirken und diese charakterisieren. In der klassischen Mechanik werden Systeme direkt mit den experimentellen Größen beschrieben (vgl. Wolfgang Nolting 2013, S. 82).
+Diese Vorgehensweise spiegelt sich stark in der folgenden heuristischen Argumentation bzw. Plausibelmachung der zeitabhängigen Schrödingergleichung wieder.
+
+$\partial$ beschreibt eine partielle Ableitung der Funktion. Dabei ist die im Nenner stehende Variable die abgeleitete und die im Zähler stehende Variable die Funktion. 
+\begin{align}
+\frac{\partial f}{\partial x}= \frac{\partial f(x,y)}{\partial x} = \frac {\partial}{\partial x}f(x,y)
+\end{align}
+Diese Gleichung stellt eine partielle Ableitung nach der Variablen x einer Funktion dar (vgl. University of Surrey 2012, S. 2ff).
+
+Ein anderes Element der Schrödingergleichung ist der Laplace-Operator $\Delta$, welcher einen Differentialoperator darstellt und die Summe der zweiten partiellen Ableitungen der Funktion ergibt.
+\begin{align}
+\Delta f(x,y,z) = \dfrac{\partial^2f}{\partial x^2} \dfrac{\partial^2f}{\partial y^2} \dfrac{\partial^2f}{\partial z^2}
+\end{align}
+(vgl. Steffen Goebbels, Stefan Ritter 2018; S. 680)\newline
+Auch wird auf das Volumenintegral, auch Dreifachintegral genannt, zurückgegriffen, welches jeweils über jede angegebene Variable iteriert und integriert (im Falle des Volumenintegrals, drei Variablen).
+\begin{align}
+V = \iiint _{B} 1d(x,y,z)
+\end{align}
+Integral der Funktion eines Körpers mit 3 Dimensionen $x,y,z$ für das Volumen $V$ (vgl. Steffen Goebbels, Stefan Ritter 2018; S. 658).
+
+\chapter{Die heuristische Argumentation der Schrödingergleichung}
+
+Für die Aufstellung der zeitabhängigen Variante der Schrödingergleichung erster Ordnung betrachten wir zuerst eine Wellenfunktion zur Berechnung von beispielsweise der Ausbreitung einer elektromagnetischen Lichtwelle. Wir betrachten diese anhand einer harmonischen Welle. Dass es sich um eine harmonische Welle handelt, erkennt man auch an der e-Funktion. Der Vorteil der Beschreibung anhand einer harmonischen Welle ist, dass diese sich mit konstanter Geschwindigkeit und Richtung ausbreitet.
+
+Dabei ist $\psi$ die Bezeichnung der Wellenfunktion, $\omega$ die Frequenz und k der Wellenvektor.
+
+\begin{align}
+ \psi(x,t)= e^{i\cdot (k\cdot x-\omega t)}
+\end{align}
+
+Ein Teilchen wird, im Gegensatz zu einer Welle, durch seine Energie E und den Impuls p charakterisiert (vgl. Torsten Fließbach, Hans Walliser 2020; S. 311). Überträgt man die Charakteristika der Berechnung von Wellen ($\hbar$,$k$,$\omega$) nun auf Teilchen, z.B. Materieteilchen, ergibt sich folgende Beziehung für dessen Eigenschaften ($E$, $p$).
+
+\begin{align}
+ E = \hbar \omega
+\end{align}
+\begin{align}
+ p = \hbar k
+\end{align}
+\begin{center}(vgl. Torsten Fließbach, Hans Walliser 2020; S. 311)\end{center}
+
+Diese Generalisierung des Wellencharakters auf Teilchen entspricht der bereits erwähnten, von Louise De Brogli vorgenommenen, Übertragung der Eigenschaften einer Welle auf Materieteilchen.
+
+Dabei ist $\hbar$ das Plancksche Wirkungsquantum und beschreibt nach Planck das Verhältnis von Energie E und Frequenz $\omega$ eines Lichtteilchens und ist somit eine fundamentale physikalische Konstante (vgl. Max Planck 1899, S. 479–480).
+
+Wie bereits erwähnt verfahren wir in der Quantenmechanik mit Operatoren, die beispielsweise auf Wellenfunktionen angewandt werden. Der Vorteil dieser Operatoren ist eine Funktionalisierung der Veränderung des Systems. 
+
+Im Folgenden werde ich zeigen wie die Operationalisierung auf die obige Wellengleichung angewandt wird, um sie auf Teilchen, Photonen und Materieteilchen (z.B. Elektronen), anwenden zu können. 
+Diese Operationalisierung ist die Grundlage der heuristischen Argumentation der zeitabhängigen Schrödingergleichung.
+
+Beide Operatoren (4.4,4.6) zur Aufstellung der zeitabhängigen Schrödingergleichung ergeben sich aus den oben angegeben Gleichungen von Impuls (4.3) und Energie (4.2), welche von Louis de Broglie durch Wellenparameter definiert wurden. Leider kann ich aufgrund der Länge der Seminararbeit nicht weiter auf diesen Schritt eingehen.
+Dieser Ansatz (De Broglies Generalisierung der Wellencharakter auf Teilchen) zeigt Schrödingers Grundgedanken, Teilchen durch eine Wellengleichung zu beschreiben. Auf die Operationalisierung beider Gleichungen (4.3,4.2) wird im Folgenden weiter eingegangen und wird für die Vervollständigung zur Schrödingergleichung gebraucht  (vgl. Torsten Fließbach, Hans Walliser 2020; S. 311)-
+
+\subsubsection{Der Energie Operator}
+
+Der Operator für die Energie lautet wie folgt.
+
+\begin{align}
+ \widehat{E} \rightarrow i \hbar \frac{\partial}{\partial t}
+\end{align}
+\begin{center} (vgl. Torsten Fließbach, Hans Walliser 2020; S. 312) \end{center}
+
+An dieser Stelle ist es wichtig zu erwähnen, dass ${i}$ die neue Einheit, eine imaginäre Zahl ist. Das bedeutet, dass das Quadrat von ${i}$ eine negative Zahl ergibt, damit gilt auch $\dfrac{1}{i}=-i$.
+
+Der Energieoperator mit der Wellenfunktion multipliziert ergibt 
+
+\begin{align}
+ \widehat{E} \cdot \psi = i \hbar \frac{\partial}{\partial t} \cdot e^{i\cdot (k\cdot x-\omega t)}
+\end{align}
+
+\subsubsection{Der Impuls Operator}
+
+Der Operator für den Impuls lautet
+
+\begin{align}
+ \widehat{p} \rightarrow -i \hbar \Delta
+\end{align}
+\begin{center}(vgl. Torsten Fließbach, Hans Walliser 2020; S. 312) \end{center}
+
+Auch hier ist wieder eine imaginäre Komponente zu erkennen($-i$).
+
+Der Impulsoperator mit der Wellenfunktion multipliziert ergibt
+
+\begin{align}
+ \widehat{p} \cdot \psi = -i \hbar \Delta \cdot e^{i\cdot (k\cdot x-\omega t)}
+\end{align}
+
+\subsubsection{Vertauschungsrelation}
+
+Um von den definierten Operatoren nun auf die Schrödingergleichung zu kommen, werden die Operatoren nun in die klassische Gleichungen zur Berechnung der Gesamtenergie eines Objekts (in dem Fall die eines Teilchens) eingesetzt.
+
+\begin{align}
+    E=E_{pot}+E_{kin}
+\end{align}
+
+In der Quantenmechanik wird statt $E_{pot}$ das Potential $V(r,t)$ das, wie an den Parametern erkennbar, Ort und Zeit abhängig ist, eingesetzt.
+
+Für die kinetische Energie nehmen wir Folgendes an:
+
+\begin{align}
+  E_{kin}=\frac {1}{2}mv^{2}=\dfrac {p^{2}}{2m}
+\end{align}
+
+Damit ergibt sich zunächst 
+
+\begin{align}
+  E=\dfrac {p^{2}}{2m}+V(x,t)
+\end{align} 
+ 
+Anschließend wird die Gleichung mit der Wellenfunktion $\psi$ multipliziert
+
+\begin{align}
+    E \psi=\dfrac {p^{2}}{2m}\psi+V(x,t)\psi
+\end{align}
+
+
+vgl. Torsten Fließbach, Hans Walliser 2020; S. 312.
+
+\subsubsection{Einsetzen der Operatoren}
+
+Nun ersetzen wir die Variablen ${E}$ und ${p}$ durch die vorher beschriebenen Operatoren $\widehat{E}$ und $\widehat{p}$.
+
+Das führt zu
+
+\begin{align}
+i\hbar\dfrac {\partial}{\partial t}\psi(x,t)=(-\dfrac {\hbar^{2}}{2m} \Delta) \cdot \psi(x,t) + V(x,t) \cdot \psi(x,t)
+\end{align}
+
+der finalen eindimensionalen zeitabhängigen Schrödingergleichung.
+
+vgl. Torsten Fließbach, Hans Walliser 2020; S. 312.
+
+So wird die Schrödingergleichung (mit zeitabhängigem Potential) in der theoretischen Physik generell als Hamiltonoperator bzw. Energieoperator bezeichnet.
+
+\begin{align}
+  {\hat  H}\,\psi (r, t) = {\mathrm  i}\,\hbar {\partial  \over \partial t}\,\psi (r, t)
+\end{align}
+
+vgl. Reiner M. Dreizler, Cora S. Lüdde 2007; S. 46.
+
+\chapter{Folgerungen der Schrödingergleichung}
+
+\section{Die Wahrscheinlichkeitsinterpretation}
+
+Wie oben bereits ausgeführt beschreibt die Schrödingergleichung Teilchen mit Welleneigenschaften. 
+
+Was dies im praktischen Kontext der Quantenmechanik bedeutet ist, dass die Aufenthaltswahrscheinlichkeiten der Teilchen jetzt anhand von Wahrscheinlichkeiten berechnet werden. Diese ergibt sich aus der Aufstellung der Schrödingergleichung, welche aus einer Wellenfunktion besteht. Denn wie in der Erklärung der Dekohärenz bereits ausgeführt wurde, ergibt das Betragsquadrat der Wellenfunktion, im Falle einer Messung bzw. Wechselwirkung, die Wahrscheinlichkeit, dass sich ein Teilchen an Ort x befindet. 
+
+Wenn das Betragsquadrat der Wellenfunktion die Aufenthaltswahrscheinlichkeit ergibt, dann muss die Summe der Wahrscheinlichkeiten, sprich die Fläche unter dem Graph bzw. das Integral, über den ganzen Verteilungsraum der Wellenfunktion Eins sein.
+
+Um nun also die Lösung der Schrödingergleichung, also die Wellenfunktion zu bestimmen, muss sie so normiert werden, dass die Wahrscheinlichkeit über den gesamten Raum aufsummiert Eins ergibt (vgl. Reiner M. Dreizler, Cora S. Lüdde 2007; S. 47).
+
+So würde die folgende Gleichung die Aufenthaltswahrscheinlichkeit nach der zeitabhängigen eindimensionalen Schrödingergleichung beschreiben:
+
+\begin{align}
+  \rho_{W}(x,t) = |\psi(x,t)|^2 = \psi^{*}(x,t)\psi(x,t)
+\end{align}
+\begin{center} (vgl. Reiner M. Dreizler, Cora S. Lüdde 2007; S. 47) \end{center}
+
+Um korrekte Ergebnisse zu erhalten, muss aber noch die Normierung der Schrödingergleichung erfolgen. Wie bereits erwähnt wird durch die Normierung die Skalierung festgelegt, nach welcher die Summe aller Wahrscheinlichkeiten zum Zeitpunkt t den Wert Eins ergeben muss.
+Das Sternchen nach dem $\psi$ markiert, dass es sich um eine konjugiert komplexe Zahl bzw. Wellenfunktion handelt (vgl. Torsten Fließbach, Hans Walliser 2020; S. 410).
+
+\begin{align}
+  \iiint d^{3}x \rho_{W} (x, t) = 1
+\end{align}
+
+Mithilfe dieser Normierung lassen sich folgende Wahrscheinlichkeitsmaße entwickeln:
+
+- Die Wahrscheinlichkeitsdichte bzw. Wahrscheinlichkeitsverteilung:
+
+\begin{align}
+  \rho_{W} (x,t) = |\psi(x,t)|^{2}
+\end{align}
+
+Wie oben bereits ausgeführt, ist dafür nichts weiter nötig, als den Betrag der Wellenfunktion zu quadrieren.
+
+- die Wahrscheinlichkeit, dass das Teilchen zu dem Zeitpunkt t in einem [...] Volumen $dV$($dV = d3r = dxdydz$) an der Stelle r zu finden ist:
+\begin{align}
+  dP(x,t) = \rho_{W} (x,t)d^{3}x
+\end{align}
+
+- die Wahrscheinlichkeit, dass das Teilchen in einem Volumen V0 zu finden ist:
+\begin{align}
+  P_{V0} (t) = \iiint_{V0} d^{3}x \rho_{W} (x, t)
+\end{align}
+
+Es lässt sich erkennen, dass alle drei Gleichungen von der Summe des Betragsquaderats der Wellengleichung der Schrödingergleichung ausgehen und diese nur erweitern.
+
+vgl. Reiner M. Dreizler, Cora S. Lüdde 2007; S. 47.
+
+\section{Das Pfadintergral}
+
+Die neue zeitabhängige Schrödingergleichung besitzt dazu eine neue Einheit die, wie im vorangehenden Kapitel (4) bereits angeführt, benötigt wird, um die Schrödingergleichung zeitabhängig zu machen. Diese neue Einheit ${i}$ ist eine imaginäre Zahl. Damit besitzt die zeitabhängige Schrödingergleichung auch eine komplexe Phase.
+
+Wenn man nun ein System mit endlich vielen freien Teilchen betrachtet, die sich durch den Raum bewegen und wenn man auf jedes Teilchen den Hamilton Operator anwendet sowie einem Pfad zuordnet, dann besitzt jeder Pfad, neben einer Wahrscheinlichkeit, auch eine komplexe Phase, da der Hamilton Operator eine imaginäre Einheit beinhaltet.
+
+Wie bereits in Kapitel 3.1 ausgeführt, kollabiert die Wellenfunktion bei einer Messung. Das heißt aus einer Wahrscheinlichkeit, dass sich das Teilchen an Ort x aufhält, wird Realität, die Dekohärenz wird aufgehoben. Es ist also unmöglich die Pfade des Systems zu bestimmen, da diese durch eine Messung zerstört würden und die Wellenfunktionen kollabieren würde.
+
+Innerhalb dieses Systems wird daher angenommen, dass jeder mögliche Pfad auch genommen wird. Mit jedem möglichen Pfad ist dabei tatsächlich jeder vorstellbare Weg gemeint, selbst der abwegigste Pfad, der von hier dreimal um den Globus und erst dann zu seiner eigentlichen Destination kommt. Wichtig ist, dass dies erstmal nur eine Annahme ist, die eigentliche Wahrscheinlichkeit ergibt sich dann nämlich erst aus der kohärenten Summe der Amplituden für die Ausbreitung entlang aller Pfade.
+
+Eine wichtige Frage ist damit aber nicht beantwortet. Dies ist die Frage nach der Wahrscheinlichkeitsamplitude für einzelne Pfade. 
+
+1948 stellte der US-Amerikanische Physiker Richard Phillips Feynman (1918-1988) ein solches Integral über alle Pfade vor. In dieser Betrachtung wird jeder Pfad mit einem komplexen Phasenvektor $e^{i S_{Pfad}/\hbar}$ gewichtet. Dieser Phasenvektor entwickelt sich mit zunehmender Zeit. Das bedeutet, dass Pfade, die besonders viel Zeit benötigen, eine große Varianz des Phasenvektors vorweisen. Anschließend wird anhand dieses Phasenvektors über alle Pfade summiert. 
+Diese Summe über alle Pfade wird als Pfadintegral bezeichnet. Der klassische Weg, jener von dem man nach klassischen Erwartungen annimmt, dass ein Teilchen ihn nimmt, zeichnet sich also dadurch aus, dass bei diesem die Variation des Phasenvektors gering ist und somit zur konstruktiven Interferenz führt. In anderen Worten die Teilchen, die den zeitlich kürzesten Weg nehmen, den klassischen, haben eine geringe Varianz und interferieren deswegen konstruktiv.
+Das Gegenteil dazu wären Pfade, die stark von dem klassischen Weg abweichen. Bei diesen ist die Variation des Phasenvektors größer, was zu dekonstruktiver Interferenz bzw. einem Weginterferrieren führt.
+
+Diese zusätzliche Methode zur Berechnung findet ihre Anwendung in der Quantenfeldtheorie und ist für diese unverzichtbar.
+Damit bilden die zeitabhängige Schrödingergleichung und der daraus resultierende Pfadintegralformalismus einen fundamentalen Baustein der modernen Quantenphysik (vgl. Matthias Bartelmann, Björn Feuerbacher, Timm Krüger, Dieter Lüst, Anton Rebhan, Andreas Wipf 2020; S. 837; vgl. Westfälische Wilhelms-Universität Münster 2011, S.33-36; vgl. Westfälische Wilhelms-Universität Münster 2011, S.41).
+
+\begin{thebibliography}{1}
+
+\bibitem{} 
+Reiner M. Dreizler, Cora S. Lüdde(2007): Lösung der stationären Schrödingergleichung in einer Raumdimension. Verlag Springer, Berlin
+% https://link-1springer-1com-1v0gnf294047f.han.ub.fau.de/chapter/10.1007/978-3-540-48802-6_5
+
+\bibitem{}
+Jochen Pade(2012): Dekohärenz. Verlag Springer, Berlin
+% https://link-1springer-1com-1v0gnf2mx009d.han.ub.fau.de/chapter/10.1007/978-3-642-25314-0_10
+
+\bibitem{}
+Torsten Fließbach, Hans Walliser(2020): Quantenmechanik. Verlag Springer, Berlin
+% https://link-1springer-1com-1v0gnf2mx017a.han.ub.fau.de/chapter/10.1007/978-3-662-62181-3_3
+
+\bibitem{}
+Matthias Bartelmann, Björn Feuerbacher, Timm Krüger, Dieter Lüst, Anton Rebhan, Andreas Wipf(2020): Theoretische Physik. Verlag Springer, Berlin
+% https://link-1springer-1com-1v0gnf2mx024c.han.ub.fau.de/book/10.1007/978-3-642-54618-1
+
+\bibitem{}
+Wolfgang Demtröder(2010): Experimentalphysik 3. Verlag Springer, Berlin
+% https://link-1springer-1com-1v0gnf2sn0052.han.ub.fau.de/book/10.1007/978-3-642-03911-9
+
+\bibitem{}
+Martin O. Steinhauser(2017): Quantenmechanik für Naturwissenschaftler. Verlag Springer, Berlin
+% https://link-1springer-1com-1v0gnf2sn0052.han.ub.fau.de/content/pdf/10.1007%2F978-3-662-52788-7.pdf
+
+\bibitem{}
+Wolfgang Nolting(2013): Grundkurs Theoretische Physik 5/1. Verlag Springer, Berlin
+% https://link-1springer-1com-1v0gnf2xl002e.han.ub.fau.de/book/10.1007/978-3-642-25403-1
+
+\bibitem{}
+Steffen Goebbels, Stefan Ritter(2018): Mathematik verstehen und anwenden – von den Grundlagen bis zu Fourier-Reihen und Laplace-Transformation. Verlag Springer, Berlin
+% https://link-1springer-1com-1v0gnf294039a.han.ub.fau.de/book/10.1007/978-3-662-57394-5
+
+\bibitem{}
+Jörn Bleck-Neuhaus(2013): Elementare Teilchen. Verlag Springer, Berlin
+% https://link-1springer-1com-1v0gnf2m900cb.han.ub.fau.de/book/10.1007/978-3-642-32579-3
+
+\bibitem{}
+Einstein, Albert (1917): Zur Quantentheorie der Strahlung. Physikalische Zeitschrift 18
+
+\bibitem{}
+Erwin Schrödinger(1963): Schrödingers Arbeiten zur Wellenmechanik. Dokumente der Naturwissenschaft. Abteilung Physik; Bd. 3
+
+\bibitem{}
+Gerd Gigerenzer, Peter M. Todd mit der ABC Research Group(1999): Simple heuristics that make us smart. Oxford University Press, New York
+
+\bibitem{}
+Louis de Broglie(1970): The Reinterpretation of Wave Mechanics. Foundations of Physics, Vol. 1, No. 1
+
+\bibitem{}
+F. Graham Smith, Terry A. King, Dan Wilkins(2007): Optics and Photonics: An Introduction. John Wiley and Sons
+
+\bibitem{}
+Albert Einstein(1909): Über die Entwicklung unserer Anschauungen über das Wesen und die Konstitution der Strahlung. 81. Versammlung Deutscher Naturforscher und Ärzte zu Salzburg
+
+\bibitem{}
+Max Planck (1899): Über irreversible Strahlungsvorgänge. Sitzungsberichte der Königlich Preußischen Akademie der Wissenschaften zu Berlin. Erster Halbband
+
+\end{thebibliography}
+
+\renewcommand\bibname{Internet Literatur}
+
+\begin{thebibliography}{2}
+
+% internet quellen
+\bibitem{}
+Technische Universität Braunschweig (2015): Die Schrödingergleichung - Eine "Herleitung". Unter \url{http://www.pci.tu-bs.de/aggericke/PC3/Kap_II/Schroedinger_Herleitung.htm} (Stand: 11.08.2021)
+
+\bibitem{}
+Westfälische Wilhelms-Universität Münster (2011): Das Pfadintegral in der Quantenmechanik. Unter \url{https://www.uni-muenster.de/Physik.TP/archive/fileadmin/lehre/teilchen/ss11/PfadintegralQM.pdf} (Stand: 28.08.2021)
+
+\bibitem{}
+Goethe Universität Frankfurth am Main (1998): Wenn aus einer Summe plötzlich Physik wird...Pfadintegrale!. Unter \url{https://itp.uni-frankfurt.de/~hees/faq-pdf/Pfadintegrale.pdf} (Stand: 08.08.2021)
+
+\bibitem{}
+University of Surrey (2012): Partial derivatives. Unter: \url{http://personal.maths.surrey.ac.uk/st/S.Zelik/teach/calculus/partial_derivatives.pdf} (Stand: 11.08.2021)
+
+\bibitem{}
+Deutscher Elektronen-Synchrotron DESY (2008): Zeitleiste. Unter \url{http://kworkquark.desy.de/zeitleiste/uebersicht/1/index.html} (Stand: 11.08.2021)
+
+\bibitem{}
+Westfälische Wilhelms-Universität Münster (2014): Confinement-Kriterium für dynamische Materiefelder bei endlichen Temperaturen. Unter: \url{https://www.uni-muenster.de/imperia/md/content/physik_tp/theses/muenster/eckert.pdf} (Stand: 29.08.2021)
+
+\bibitem{} 
+Max-Plank-Gesellschaft (2005): Forschungsbericht - Max-Planck-Institut für Mathematik. Unter \url{https://www.mpg.de/325007/forschungsSchwerpunkt1} (Stand: 07.08.2021)
+
+\end{thebibliography}
+
+
+\newpage
+\thispagestyle{plain}
+\begin{center}
+\textit{Ich habe diese Seminararbeit ohne fremde Hilfe angefertigt und nur die im Literaturverzeichnis angeführten Quellen und Hilfsmittel benützt.}
+\newline
+\newline
+Ort \qquad\qquad\qquad Datum \qquad\qquad\qquad Unterschrift
+\end{center}
+
+\newpage
+
+\end{document}

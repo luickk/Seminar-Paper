@@ -1,1 +1,1 @@
-# Seminar-Paper
+# Seminar-Paper (Seminararbeit)

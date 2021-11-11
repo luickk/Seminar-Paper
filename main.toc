@@ -1,0 +1,40 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Forschungsfrage der Seminararbeit}{3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Bedeutung der Forschungsfrage f\IeC {\"u}r die Physik}{3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Historischer Kontext der Schr\IeC {\"o}dingergleichung}{4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Die Quantisierung und ihre Anf\IeC {\"a}nge}{4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Moderne Erkenntnisse der Quantenphysik}{5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Wichtige Annahmen}{6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Wahrscheinlichkeiten und Wellen - Dekoh\IeC {\"a}renz}{6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Die Zeitabh\IeC {\"a}ngigkeit}{7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3}Heuristische Methode und Problemstellung}{8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4}Neue mathematische Konzepte und Operatoren}{9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Die heuristische Argumentation der Schr\IeC {\"o}dingergleichung}{10}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Der Energie Operator}{12}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Der Impuls Operator}{13}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Vertauschungsrelation}{13}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\nonumberline Einsetzen der Operatoren}{14}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Volgerungen der Schr\IeC {\"o}dingergleichung}{15}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1}Die Wahrscheinlichkeitsinterpretation}{15}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2}Das Pfadintergral}{17}% 
